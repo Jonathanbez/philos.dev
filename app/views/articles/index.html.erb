@@ -2,9 +2,9 @@
 <p>A blog of Philosophy and Development human and software<p></h1>
 
 <ul>
-    <%@articles.each do |article|%>
+    <% @articles.each do |article| %>
         <li>
-            <%article.title%>
+            <%= article.title %>
         <li>
-    <%end%>
-    
+    <% end %>
+</ul>
