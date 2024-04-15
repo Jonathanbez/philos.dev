@@ -1,3 +1,10 @@
 <h1>Philos.dev 
 <p>A blog of Philosophy and Development human and software<p></h1>
 
+<ul>
+    <%@articles.each do |article|%>
+        <li>
+            <%article.title%>
+        <li>
+    <%end%>
+    
