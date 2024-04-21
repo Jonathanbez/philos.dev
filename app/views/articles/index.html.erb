@@ -1,10 +1,10 @@
-<h1>Philos.dev 
+<h1>Philos.dev
 <p>A blog of Philosophy and Development human and software<p></h1>
 
 <ul>
     <% @articles.each do |article| %>
         <li>
             <%= link_to article.title, article %>
+        </li>
     <% end %>
 </ul>
- 
