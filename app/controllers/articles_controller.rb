@@ -6,4 +6,18 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
   end
+
+  def new
+    @article = Article.new
+  end
+
+  def create
+    @article = Article.new(params[:title, :body])
+
+    if @article.save
+      redirect_to @article
+    else
+      reder :new
+    end
+  end
 end
